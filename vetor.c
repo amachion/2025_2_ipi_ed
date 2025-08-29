@@ -81,7 +81,6 @@ void exibe_vetor (t_vetor *vetor) {
 }
 
 void preenche_vetor (t_vetor *vetor) {
-    srand(time(0));
     for (int i=0; i<vetor->capacidade; i++)
         vetor->v[i] = rand() % (vetor->capacidade * 10);
     vetor->ocupacao = vetor->capacidade;
