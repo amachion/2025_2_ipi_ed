@@ -102,6 +102,14 @@ void selection_sort (t_vetor *vetor) {
         }
     }
 }
-
+void bubble_sort (t_vetor *vetor){
+    for (int i=0; i<vetor->capacidade-1; i++)
+        for (int j=i+1; j<vetor->capacidade; j++)
+            if (vetor->v[j] < vetor->v[i]) {
+                int aux = vetor->v[i];
+                vetor->v[i] = vetor->v[j];
+                vetor->v[j] = aux;
+            }
+}
 //implementar uma função que recebe uma struct t_vetor e cria um clone dela
 //protótipo: t_vetor clone (t_vetor * vetor);
