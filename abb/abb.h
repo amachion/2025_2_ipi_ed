@@ -10,3 +10,7 @@ int esta_vazia (t_abb *);
 void insere (int, t_abb *);
 
 void print_em_ordem (t_abb *);
+
+int conta_nos (t_abb *);
+
+int soma_valores (t_abb *);
